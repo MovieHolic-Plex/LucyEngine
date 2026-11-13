@@ -1,0 +1,14 @@
+.omc/
+node_modules/
+dist/
+data/
+.env
+.env.local
+spike/out/
+test-results/
+playwright-report/
+*.log
+nul
+**/nul
+evals/out/
+tmp/

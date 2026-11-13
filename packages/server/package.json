@@ -1,0 +1,31 @@
+{
+  "name": "@age/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./protocol": "./src/protocol.ts",
+    "./starter": "./src/starter.ts",
+    "./db": "./src/db.ts"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../../.env src/main.ts",
+    "start": "tsx --env-file-if-exists=../../.env src/main.ts"
+  },
+  "dependencies": {
+    "@age/agent": "workspace:*",
+    "@age/assets": "workspace:*",
+    "@age/model": "workspace:*",
+    "@age/runtime": "workspace:*",
+    "@fastify/static": "^10.1.10",
+    "@fastify/websocket": "^11.3.7",
+    "fastify": "^5.12.8",
+    "nanoid": "^6.0.2",
+    "@anthropic-ai/sdk": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.0"
+  }
+}

@@ -1,0 +1,8 @@
+[
+  { "id": "station", "text": "비 갠 저녁, 버려진 기차역 앞 작은 광장. 매표소 영감이 말을 걸고, 풀숲에는 슬라임 두 마리가 있어." },
+  { "id": "harbor", "text": "밤의 항구 시장 골목. 등불이 줄지어 켜져 있고, 생선 장수와 이야기할 수 있어. 부두 쪽에는 게 로봇이 순찰해." },
+  { "id": "camp", "text": "안개 낀 숲속 빈터의 모닥불 야영지. 떠돌이 상인이 쉬고 있고, 어둠 속에서 뭔가가 다가와." },
+  { "id": "mine", "text": "버섯이 빛나는 지하 광산 입구. 늙은 광부가 길을 막고 있고, 안쪽에는 박쥐 떼가 있어." },
+  { "id": "rooftop", "text": "A rooftop garden in a crowded city at sunset. A girl tends her plants and asks you for help; pigeons that bite are everywhere." },
+  { "id": "short", "text": "작은 마을" }
+]

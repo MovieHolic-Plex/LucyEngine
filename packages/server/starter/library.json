@@ -1,0 +1,606 @@
+{
+ "mood": "a run-down small town built around an abandoned railway station, rusty metal, weathered wood, overgrown plants, warm evening after rain",
+ "assets": [
+  {
+   "id": "tex_dirt",
+   "kind": "texture",
+   "file": "dirt.png",
+   "w": 72,
+   "h": 72,
+   "color": "#6d4434",
+   "prompt": "packed brown dirt ground with tiny pebbles"
+  },
+  {
+   "id": "tex_pavement",
+   "kind": "texture",
+   "file": "pavement.png",
+   "w": 72,
+   "h": 72,
+   "color": "#777066",
+   "prompt": "cracked old concrete pavement with small weeds in the cracks"
+  },
+  {
+   "id": "tex_grass",
+   "kind": "texture",
+   "file": "grass.png",
+   "w": 72,
+   "h": 72,
+   "color": "#607d35",
+   "prompt": "overgrown wild grass with a few tiny clover leaves"
+  },
+  {
+   "id": "tex_water",
+   "kind": "texture",
+   "file": "water.png",
+   "w": 72,
+   "h": 72,
+   "color": "#33575b",
+   "prompt": "calm dark teal pond water with small soft ripples"
+  },
+  {
+   "id": "tex_planks",
+   "kind": "texture",
+   "file": "planks.png",
+   "w": 72,
+   "h": 72,
+   "color": "#777066",
+   "prompt": "old wooden floor planks laid horizontally, worn and faded"
+  },
+  {
+   "id": "spr_barrel",
+   "kind": "sprite",
+   "file": "barrel.png",
+   "w": 20,
+   "h": 30,
+   "footprint": {
+    "w": 18,
+    "h": 9
+   },
+   "color": "#b24e3c",
+   "prompt": "a rusty oil drum barrel"
+  },
+  {
+   "id": "spr_crate",
+   "kind": "sprite",
+   "file": "crate.png",
+   "w": 30,
+   "h": 26,
+   "footprint": {
+    "w": 26,
+    "h": 8
+   },
+   "color": "#67444e",
+   "prompt": "a weathered wooden shipping crate"
+  },
+  {
+   "id": "spr_lamp",
+   "kind": "sprite",
+   "file": "lamp.png",
+   "w": 20,
+   "h": 64,
+   "footprint": {
+    "w": 9,
+    "h": 6
+   },
+   "color": "#322c42",
+   "prompt": "an old iron street lamp post with a glowing warm lantern on top"
+  },
+  {
+   "id": "spr_bench",
+   "kind": "sprite",
+   "file": "bench.png",
+   "w": 35,
+   "h": 22,
+   "footprint": {
+    "w": 27,
+    "h": 7
+   },
+   "color": "#67444e",
+   "prompt": "a worn wooden station bench facing the viewer"
+  },
+  {
+   "id": "spr_sign",
+   "kind": "sprite",
+   "file": "sign.png",
+   "w": 30,
+   "h": 36,
+   "footprint": {
+    "w": 6,
+    "h": 6
+   },
+   "color": "#46515d",
+   "prompt": "a wooden signpost with a blank rusty metal plate"
+  },
+  {
+   "id": "spr_vending",
+   "kind": "sprite",
+   "file": "vending.png",
+   "w": 35,
+   "h": 46,
+   "footprint": {
+    "w": 31,
+    "h": 14
+   },
+   "color": "#57437a",
+   "prompt": "an old dented vending machine with faded colours and a faint glow"
+  },
+  {
+   "id": "spr_bush",
+   "kind": "sprite",
+   "file": "bush.png",
+   "w": 23,
+   "h": 22,
+   "footprint": {
+    "w": 13,
+    "h": 7
+   },
+   "color": "#607d35",
+   "prompt": "a round leafy green bush"
+  },
+  {
+   "id": "spr_tree",
+   "kind": "sprite",
+   "file": "tree.png",
+   "w": 92,
+   "h": 84,
+   "footprint": {
+    "w": 35,
+    "h": 20
+   },
+   "color": "#607d35",
+   "prompt": "a broad leafy tree with a thick trunk"
+  },
+  {
+   "id": "spr_rock",
+   "kind": "sprite",
+   "file": "rock.png",
+   "w": 21,
+   "h": 22,
+   "footprint": {
+    "w": 18,
+    "h": 7
+   },
+   "color": "#777066",
+   "prompt": "a mossy grey boulder"
+  },
+  {
+   "id": "spr_fence",
+   "kind": "sprite",
+   "file": "fence.png",
+   "w": 41,
+   "h": 24,
+   "footprint": {
+    "w": 34,
+    "h": 7
+   },
+   "color": "#8f6750",
+   "prompt": "a short section of weathered wooden picket fence, seen from the front"
+  },
+  {
+   "id": "spr_flowers",
+   "kind": "sprite",
+   "file": "flowers.png",
+   "w": 18,
+   "h": 14,
+   "footprint": {
+    "w": 9,
+    "h": 6
+   },
+   "color": "#16372f",
+   "prompt": "a small patch of wild flowers, yellow and white, low to the ground"
+  },
+  {
+   "id": "spr_campfire",
+   "kind": "sprite",
+   "file": "campfire.png",
+   "w": 27,
+   "h": 24,
+   "footprint": {
+    "w": 17,
+    "h": 7
+   },
+   "color": "#9e978d",
+   "prompt": "a small campfire with burning logs ringed by stones"
+  },
+  {
+   "id": "spr_chest",
+   "kind": "sprite",
+   "file": "chest.png",
+   "w": 24,
+   "h": 20,
+   "footprint": {
+    "w": 19,
+    "h": 6
+   },
+   "color": "#322c42",
+   "prompt": "a closed wooden treasure chest with iron bands"
+  },
+  {
+   "id": "spr_house",
+   "kind": "sprite",
+   "file": "house.png",
+   "w": 107,
+   "h": 128,
+   "footprint": {
+    "w": 99,
+    "h": 49
+   },
+   "color": "#18102c",
+   "prompt": "a small ramshackle two-storey house patched together from wood planks and corrugated tin, with a door in the middle of the front wall, a window and a slanted tin roof"
+  },
+  {
+   "id": "spr_shop",
+   "kind": "sprite",
+   "file": "shop.png",
+   "w": 105,
+   "h": 110,
+   "footprint": {
+    "w": 91,
+    "h": 42
+   },
+   "color": "#8b272a",
+   "prompt": "a small ticket booth shop converted from an old train carriage, with an awning, a counter window and a door"
+  },
+  {
+   "id": "chr_hero",
+   "kind": "character",
+   "file": "hero.png",
+   "w": 140,
+   "h": 120,
+   "frames": {
+    "frameW": 28,
+    "frameH": 40,
+    "perRow": 5,
+    "rows": [
+     "down",
+     "up",
+     "side"
+    ]
+   },
+   "color": "#322c42",
+   "prompt": "a young adventurer girl with short dark hair, a red scarf, a mustard jacket and a big wrench on her back"
+  },
+  {
+   "id": "chr_oldman",
+   "kind": "character",
+   "file": "oldman.png",
+   "w": 125,
+   "h": 120,
+   "frames": {
+    "frameW": 25,
+    "frameH": 40,
+    "perRow": 5,
+    "rows": [
+     "down",
+     "up",
+     "side"
+    ]
+   },
+   "color": "#378450",
+   "prompt": "an old shopkeeper man with a white beard, a green apron and a flat cap"
+  },
+  {
+   "id": "chr_villager",
+   "kind": "character",
+   "file": "villager.png",
+   "w": 105,
+   "h": 120,
+   "frames": {
+    "frameW": 21,
+    "frameH": 40,
+    "perRow": 5,
+    "rows": [
+     "down",
+     "up",
+     "side"
+    ]
+   },
+   "color": "#5a758d",
+   "prompt": "a village woman with a braided ponytail, a faded blue work dress and rubber boots"
+  },
+  {
+   "id": "chr_slime",
+   "kind": "character",
+   "file": "slime.png",
+   "w": 145,
+   "h": 72,
+   "frames": {
+    "frameW": 29,
+    "frameH": 24,
+    "perRow": 5,
+    "rows": [
+     "down",
+     "up",
+     "side"
+    ]
+   },
+   "color": "#208182",
+   "prompt": "a small blobby mould slime monster, teal with glowing yellow eyes"
+  },
+  {
+   "id": "chr_crab",
+   "kind": "character",
+   "file": "crab.png",
+   "w": 175,
+   "h": 72,
+   "frames": {
+    "frameW": 35,
+    "frameH": 24,
+    "perRow": 5,
+    "rows": [
+     "down",
+     "up",
+     "side"
+    ]
+   },
+   "color": "#cf8444",
+   "prompt": "a small rusty scrap-metal crab robot with one glowing red eye"
+  },
+  {
+   "id": "chr_spitter",
+   "kind": "character",
+   "file": "spitter.png",
+   "w": 125,
+   "h": 90,
+   "frames": {
+    "frameW": 25,
+    "frameH": 30,
+    "perRow": 5,
+    "rows": [
+     "down",
+     "up",
+     "side"
+    ]
+   },
+   "color": "#18102c",
+   "prompt": "a carnivorous spore plant monster with a bulbous purple head and a toothy mouth, rooted in place"
+  }
+ ],
+ "materials": [
+  {
+   "id": "dirt",
+   "name": "흙바닥",
+   "asset": "tex_dirt",
+   "color": "#6d4434",
+   "walkable": true,
+   "priority": 1,
+   "edge": "soft"
+  },
+  {
+   "id": "pavement",
+   "name": "낡은 포장",
+   "asset": "tex_pavement",
+   "color": "#777066",
+   "walkable": true,
+   "priority": 2,
+   "edge": "hard"
+  },
+  {
+   "id": "grass",
+   "name": "풀밭",
+   "asset": "tex_grass",
+   "color": "#607d35",
+   "walkable": true,
+   "priority": 3,
+   "edge": "soft"
+  },
+  {
+   "id": "water",
+   "name": "물",
+   "asset": "tex_water",
+   "color": "#33575b",
+   "walkable": false,
+   "priority": -1,
+   "edge": "soft"
+  },
+  {
+   "id": "planks",
+   "name": "나무 마루",
+   "asset": "tex_planks",
+   "color": "#777066",
+   "walkable": true,
+   "priority": 4,
+   "edge": "hard"
+  }
+ ],
+ "prefabs": [
+  {
+   "id": "barrel",
+   "name": "드럼통",
+   "kind": "prop",
+   "asset": "spr_barrel",
+   "props": {}
+  },
+  {
+   "id": "crate",
+   "name": "나무 상자",
+   "kind": "prop",
+   "asset": "spr_crate",
+   "props": {}
+  },
+  {
+   "id": "lamp",
+   "name": "가로등",
+   "kind": "prop",
+   "asset": "spr_lamp",
+   "props": {
+    "light": {
+     "color": "#ffb46a",
+     "radius": 6,
+     "intensity": 0.95
+    }
+   }
+  },
+  {
+   "id": "bench",
+   "name": "벤치",
+   "kind": "prop",
+   "asset": "spr_bench",
+   "props": {}
+  },
+  {
+   "id": "sign",
+   "name": "표지판",
+   "kind": "prop",
+   "asset": "spr_sign",
+   "props": {}
+  },
+  {
+   "id": "vending",
+   "name": "자판기",
+   "kind": "prop",
+   "asset": "spr_vending",
+   "props": {
+    "light": {
+     "color": "#6fe6d6",
+     "radius": 3.5,
+     "intensity": 0.7
+    }
+   }
+  },
+  {
+   "id": "bush",
+   "name": "덤불",
+   "kind": "prop",
+   "asset": "spr_bush",
+   "props": {}
+  },
+  {
+   "id": "tree",
+   "name": "나무",
+   "kind": "prop",
+   "asset": "spr_tree",
+   "props": {}
+  },
+  {
+   "id": "rock",
+   "name": "바위",
+   "kind": "prop",
+   "asset": "spr_rock",
+   "props": {}
+  },
+  {
+   "id": "fence",
+   "name": "울타리",
+   "kind": "prop",
+   "asset": "spr_fence",
+   "props": {}
+  },
+  {
+   "id": "flowers",
+   "name": "들꽃",
+   "kind": "prop",
+   "asset": "spr_flowers",
+   "props": {
+    "solid": false
+   }
+  },
+  {
+   "id": "campfire",
+   "name": "모닥불",
+   "kind": "prop",
+   "asset": "spr_campfire",
+   "props": {
+    "light": {
+     "color": "#ff9a4a",
+     "radius": 5,
+     "intensity": 1,
+     "flicker": true,
+     "height": 0.4
+    }
+   }
+  },
+  {
+   "id": "chest",
+   "name": "보물 상자",
+   "kind": "prop",
+   "asset": "spr_chest",
+   "props": {}
+  },
+  {
+   "id": "house",
+   "name": "판잣집",
+   "kind": "building",
+   "asset": "spr_house",
+   "props": {}
+  },
+  {
+   "id": "shop",
+   "name": "매표소 가게",
+   "kind": "building",
+   "asset": "spr_shop",
+   "props": {}
+  },
+  {
+   "id": "hero",
+   "name": "주인공",
+   "kind": "player",
+   "asset": "chr_hero",
+   "props": {
+    "hp": 6,
+    "speed": 4,
+    "damage": 1
+   }
+  },
+  {
+   "id": "oldman",
+   "name": "노인",
+   "kind": "npc",
+   "asset": "chr_oldman",
+   "props": {
+    "name": "노인",
+    "behavior": "idle"
+   }
+  },
+  {
+   "id": "villager",
+   "name": "마을 사람",
+   "kind": "npc",
+   "asset": "chr_villager",
+   "props": {
+    "name": "마을 사람",
+    "behavior": "wander",
+    "speed": 1.2
+   }
+  },
+  {
+   "id": "slime",
+   "name": "곰팡이 슬라임",
+   "kind": "enemy",
+   "asset": "chr_slime",
+   "props": {
+    "hp": 2,
+    "speed": 1.6,
+    "damage": 1,
+    "behavior": "chase",
+    "aggroRange": 5
+   }
+  },
+  {
+   "id": "crab",
+   "name": "고철 게",
+   "kind": "enemy",
+   "asset": "chr_crab",
+   "props": {
+    "hp": 3,
+    "speed": 2.2,
+    "damage": 1,
+    "behavior": "patrol",
+    "aggroRange": 4
+   }
+  },
+  {
+   "id": "spitter",
+   "name": "포자 꽃",
+   "kind": "enemy",
+   "asset": "chr_spitter",
+   "props": {
+    "hp": 2,
+    "speed": 0.6,
+    "damage": 1,
+    "behavior": "ranged",
+    "aggroRange": 6
+   }
+  }
+ ]
+}

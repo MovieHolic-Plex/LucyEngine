@@ -1,0 +1,36 @@
+{
+  "name": "lucy-engine",
+  "description": "AI-native editor for top-down pixel-art adventure games: describe a scene, get a playable one.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.24.0",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:server": "pnpm --filter @age/server dev",
+    "dev:editor": "pnpm --filter @age/editor dev",
+    "build": "pnpm --filter @age/editor build",
+    "start": "pnpm --filter @age/server start",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "e2e": "playwright test -c e2e/playwright.config.ts",
+    "eval": "tsx evals/run.ts"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^24.0.0",
+    "phaser": "^4.2.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "@age/agent": "workspace:*",
+    "@age/assets": "workspace:*",
+    "@age/model": "workspace:*",
+    "@age/runtime": "workspace:*",
+    "@age/server": "workspace:*"
+  }
+}
